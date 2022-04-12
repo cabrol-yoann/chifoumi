@@ -76,7 +76,7 @@ int randMinMax(int min, int max){
 
 Chifoumi::UnCoup Chifoumi::genererUnCoup()
 {
-    UnCoup valeurGeneree;   // valeur ? retourner
+    UnCoup valeurGeneree;   // valeur à retourner
     unsigned int nbAleatoire;
     nbAleatoire = randMinMax(1,4);
     switch (nbAleatoire)
