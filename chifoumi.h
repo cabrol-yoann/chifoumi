@@ -42,6 +42,8 @@ private slots:
     void choixPapier();
 /*Slots qui execute la manche en fonction du choix du joueur */
     void infoTexte();
+/* Slot qui ferme la fenêtre */
+    void quitter();
 
 private:
     Ui::chifoumi *ui;

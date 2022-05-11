@@ -404,7 +404,7 @@
     <property name="title">
      <string>&amp;Fichier</string>
     </property>
-    <addaction name="actionNouvelle"/>
+    <addaction name="actionQuitter"/>
    </widget>
    <widget class="QMenu" name="menu_Aide">
     <property name="title">
@@ -416,9 +416,9 @@
    <addaction name="menu_Aide"/>
   </widget>
   <widget class="QStatusBar" name="statusbar"/>
-  <action name="actionNouvelle">
+  <action name="actionQuitter">
    <property name="text">
-    <string>&amp;Nouvelle</string>
+    <string>&amp;Quitter</string>
    </property>
    <property name="shortcut">
     <string>Alt+F3</string>
@@ -436,22 +436,5 @@
  <resources>
   <include location="Resources.qrc"/>
  </resources>
- <connections>
-  <connection>
-   <sender>actionNouvelle</sender>
-   <signal>triggered()</signal>
-   <receiver>bNPartie</receiver>
-   <slot>click()</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>-1</x>
-     <y>-1</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>748</x>
-     <y>557</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
