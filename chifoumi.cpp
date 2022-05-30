@@ -20,7 +20,7 @@ chifoumi::chifoumi(QWidget *parent)
     connect(ui -> bPierre, SIGNAL(clicked()),this, SLOT(choixPierre()));
     connect(ui -> bPapier, SIGNAL(clicked()),this, SLOT(choixPapier()));
     connect(ui -> actionAide, SIGNAL(triggered()),this, SLOT(infoTexte()));
-    connect(ui->actionQuitter, SIGNAL(triggered()),this,SLOT(quitter()));
+    connect(ui-> actionQuitter, SIGNAL(triggered()),this,SLOT(quitter()));
 }
 
 chifoumi::~chifoumi()
@@ -223,6 +223,7 @@ void chifoumi::choixPapier()
 void chifoumi::infoTexte()
 {
     QMessageBox maBox;
+    maBox.setWindowTitle("A propos de de cette application.");
     maBox.setText("Version: 3. \n Date de creation:04/05/2022. \n Créer par Cabrol Yoann, Da Silva Eduardo et Lauriou Tanguy. ");
     maBox.exec();
 }
